@@ -1,0 +1,54 @@
+.container {
+  position: fixed;
+  width: 60%;
+  height: 100px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.arms {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 150px;
+  border-radius: 75px;
+
+  & > div {
+    display: flex;
+    flex-direction: column;
+
+    & > span:first-child {
+      font-size: 40px;
+    }
+    & > span:nth-child(2) {
+      font-size: 20px;
+      color: darkgray;
+    }
+    &:nth-child(2) {
+      align-items: flex-end;
+    }
+  }
+
+  &:nth-child(2) > div > span {
+    text-align: right;
+  }
+
+}
+
+.vs {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
